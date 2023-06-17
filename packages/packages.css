@@ -1,12 +1,24 @@
 main {
-    padding-top: 32px;
+    padding-top: 2rem;
+}
+
+.background {
+    background-image: url("../assets/plans-background.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(40%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
 }
 
 .package {
     width: 80%;
-    margin: 16px 0;
+    margin: 1rem 0;
     border: 4px solid #0e4f1f;
     border-left: none;
+    position: relative;
 }
 
 .package:hover {
@@ -22,7 +34,19 @@ main {
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 32px;
+    padding: 2rem;
+}
+
+.package__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.2rem;
+    font-size: 0.94rem;
+    color: white;
+    background-color: #ff5454;
+    padding: 0.63rem;
+    border-radius: 10px;
 }
 
 .package__subtitle {
@@ -30,11 +54,15 @@ main {
 }
 
 .package__info {
-    padding: 60px;
+    padding: 3.75rem;
     border: 1px solid  #0e4f1f;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #0e4f1f;
     background-color: white;
+}
+
+.clearfix {
+    clear: both;
 }
 
 #plus {
@@ -43,7 +71,20 @@ main {
 
 #free {
     background-color: rgba(234, 252, 237, 0.95);
-} 
+    float: right;
+    border: 4px solid #0e4f1f;
+    border-right: none;
+    text-align: right;
+}
+
+#free:hover {
+    box-shadow: 2px 2px 4px rgba(8, 8, 8, 0.459);
+    border-color: greenyellow
+}
+
+#free:active {
+    border-color: red;
+}
 
 #premium {
     background-color: rgba(14, 79, 31, 0.95);

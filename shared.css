@@ -8,21 +8,43 @@ body {
 }
 
 
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 189vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+} 
+
 .main-header {
     background-color: #2ddf5c;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .main-header > div {
     display: inline-block;
     vertical-align: middle;
+
 }
 
 .main-header__brand {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.4rem;
+    height: 1.4rem;
+    display: inline-block;
+}
+
+.main-header__brand img {
+    height: 100%;
 }
 
 .main-nav {
@@ -40,14 +62,14 @@ body {
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
     font-weight: bold;
-    padding: 3px;
+    padding: 0.2rem;
 }
 
 .main-nav__item a:hover {
@@ -61,7 +83,7 @@ body {
 .main-nav__item--cta a {
     color: white;
     background: red;
-    padding: 5px 10px;
+    padding: 0.32rem 0.63rem;
     border-radius: 8px;
 }
 
@@ -76,8 +98,8 @@ body {
 
 .main-footer {
     background-color: black;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main-footer__links {
@@ -89,7 +111,7 @@ body {
 
 .main-footer__link {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-footer__link a {
@@ -108,7 +130,7 @@ body {
     color: white;
     font: inherit;
     border: 1.5px solid #0e4f1f;
-    padding: 5px;
+    padding: 0.32rem;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
