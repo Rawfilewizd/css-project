@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+main {
+    min-height: calc(100vh - 3.2rem - 8.2rem);
+}
+
 
 .backdrop {
     position: fixed;
@@ -34,13 +38,37 @@ body {
 
 }
 
+.toggle-button {
+    display: none;
+    width: 3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background-color: black;
+    display: block;
+    margin: 0.6rem 0;
+}
+
 .main-header__brand {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.4rem;
+   /* font-size: 1.4rem; */
     height: 1.4rem;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .main-header__brand img {
@@ -50,7 +78,7 @@ body {
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 73px);
+    width: calc(100% - 122px);
     vertical-align: middle;
 }
 
@@ -65,7 +93,8 @@ body {
     margin: 0 1rem;
 }
 
-.main-nav__item a {
+.main-nav__item a, 
+.mobile-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
     font-weight: bold;
@@ -80,7 +109,8 @@ body {
     color: red;
 }
 
-.main-nav__item--cta a {
+.main-nav__item--cta a, 
+.mobile-nav__item--cta a{
     color: white;
     background: red;
     padding: 0.32rem 0.63rem;
@@ -124,6 +154,46 @@ body {
     color: #ccc;
 }
 
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 80%;
+    height: 100vh;
+}
+
+.mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-nav__item {
+    margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+    font: 1.rem;
+    /*text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 0.2rem; */
+}
+
+.mobile-nav__item--cta a:hover {
+    background-color: #0e4f1f;
+    color: #19b84c;
+}
+
+.mobile-nav__item--cta a:active {
+    color: #ff1b68;
+}
 
 .button {
     background-color: #0e4f1f;
@@ -147,4 +217,8 @@ body {
 
 .button:focus {
     outline: none;
+}
+
+.open {
+    display: block !important;
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uHost</title>
     <link rel="shortcut icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
@@ -23,6 +24,11 @@
     </div>
     <header class="main-header">
         <div>
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
             <a href="index.html" class="main-header__brand">
                 <img src="../css-project/assets/uhost-icon.png" alt="uhost - Your favorite hosting company">
             </a>
@@ -41,6 +47,19 @@
             </ul>
         </nav>
     </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="../css-project/packages/index.html">Packages</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="../css-project/customer/index.html">Customers</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="start-hosting/index.html">Start Hosting</a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <section id="product-overview">
             <h1>Get the freedom you deserve.</h1>
@@ -295,5 +314,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="shared.js"></script>
 </body>
-</html>
+</html> 
